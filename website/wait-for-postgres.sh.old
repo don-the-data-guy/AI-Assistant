@@ -7,17 +7,11 @@
 
 set -e
 
-# Pin Prisma to the legacy version this project expects.
-# Without this, npx downloads the newest Prisma, which requires newer Node.
-prisma() {
-  npx --yes prisma@4.14.0 "$@"
-}
-
 # validate schema
-prisma validate
+npx prisma validate
 
 # wait until the db is available
-until echo 'SELECT version();' | prisma db execute --stdin; do
+until echo 'SELECT version();' | npx prisma db execute --stdin; do
   echo >&2 "Postgres is unavailable - sleeping"
   sleep 1
 done
@@ -30,7 +24,7 @@ echo >&2 "Postgres is up - executing command"
 # npx prisma migrate resolve --applied 20230326131923_initial_migration
 # prisma will fail with the above command if resolve is already applied,
 # we might need to run the command with set +e
-prisma db push --skip-generate
+npx prisma db push --skip-generate
 
 # Print and execute all other arguments starting with `$1`
 # So `exec "$1" "$2" "$3" ...`
