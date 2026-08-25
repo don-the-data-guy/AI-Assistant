@@ -1,170 +1,286 @@
 <h1 align="center">
-    <span>Open-Assistant</span>
-  <img width="auto" height="50px" src="https://github.com/LAION-AI/Open-Assistant/blob/main/assets/logo_crop.png"/>
+  <span>Ethoculus</span>
 </h1>
 
-<blockquote>
-<p>:memo: <strong>NOTE</strong>: OpenAssistant is completed, and the project is now finished. Thank you to everyone who contributed! Check out our <a href="https://projects.laion.ai/Open-Assistant/blog/2023/10/25/open-assistant-is-completed">blog post</a> for more information.</p>
-</blockquote>
+<p align="center">
+  <strong>Local-first generative AI you can inspect, question, and improve.</strong>
+</p>
+
+<p align="center">
+  Clone it. Start it. Pull a model. Chat locally.
+</p>
 
 <div align="center">
 
-<a href="https://github.com/LAION-AI/Open-Assistant/stargazers">![GitHub Repo stars](https://img.shields.io/github/stars/LAION-AI/Open-Assistant?style=social)</a>
-<a href="https://laion-ai.github.io/Open-Assistant/">![Docs](https://img.shields.io/badge/docs-laion--ai.github.io%2FOpen--Assistant%2F-green)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/build-frontend.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/build-frontend.yaml?label=build-frontend)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/build-postgres.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/build-postgres.yaml?label=build-postgres)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/pre-commit.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/pre-commit.yaml?label=pre-commit)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/test-api-contract.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/test-api-contract.yaml?label=tests-api)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/test-e2e.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/test-e2e.yaml?label=tests-web)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/deploy-docs-site.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/deploy-docs-site.yaml?label=deploy-docs)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/production-deploy.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/production-deploy.yaml?label=deploy-production)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/actions/workflows/release.yaml">![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LAION-AI/Open-Assistant/release.yaml?label=deploy-release)</a>
-<a href="https://github.com/LAION-AI/Open-Assistant/releases">![GitHub release (latest by date)](https://img.shields.io/github/v/release/LAION-AI/Open-Assistant)</a>
-<a href="https://github-com.translate.goog/LAION-AI/Open-Assistant/blob/main/README.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">![Translate](https://img.shields.io/badge/Translate-blue)</a>
+<a href="https://github.com/don-the-data-guy/AI-Assistant/stargazers">![GitHub Repo stars](https://img.shields.io/github/stars/don-the-data-guy/AI-Assistant?style=social)</a>
+<a href="docs/docs/ethoculus/README.md">![Docs](https://img.shields.io/badge/docs-Ethoculus-green)</a>
+<a href="LICENSE">![License](https://img.shields.io/badge/license-Apache--2.0-blue)</a>
 
 </div>
 
-# Table of Contents
+---
 
-- [What is Open Assistant?](#what-is-open-assistant)
-- [Useful Links](#useful-links)
-- [How To Try It Out](#how-to-try-it-out)
-- [The Vision](#the-vision)
-- [The Plan](#the-plan)
-- [How You Can Help](#how-you-can-help)
+# Ethoculus
+
+Ethoculus is a downloadable, local-first generative AI starter platform designed to make AI easier to install, easier to inspect, and easier to question.
+
+The first goal is not to build the biggest model.
+
+The first goal is to make a working AI platform that ordinary people can download, run, test, and improve.
+
+Ethoculus starts with a practical local stack:
+
+- Docker Compose
+- Ollama
+- Open WebUI
+- A small working local model
+- Optional document-based RAG
+
+The long-term goal is to evolve Ethoculus into a transparent, document-aware AI platform built around source checking, human judgment, and ethical review.
+
+> Check my citations, validate my sources, and come to your own conclusion.
 
 ---
 
-## What is Open Assistant?
+# Table of Contents
 
-<p align="center">
-Open Assistant is a project meant to give everyone access to a great chat based
-large language model.
-</p>
+- [What Is Ethoculus?](#what-is-ethoculus)
+- [Quick Start](#quick-start)
+- [Documentation](#documentation)
+- [Using RAG](#using-rag)
+- [Core Principles](#core-principles)
+- [Roadmap](#roadmap)
+- [Project Status](#project-status)
+- [Attribution](#attribution)
+- [Contributing](#contributing)
 
-We believe that by doing this we will create a revolution in innovation in
-language. In the same way that stable-diffusion helped the world make art and
-images in new ways we hope Open Assistant can help improve the world by
-improving language itself.
+---
 
-# Useful Links
+## What Is Ethoculus?
 
-- [Data Collection](https://open-assistant.io)
+Ethoculus is a simple local AI starter platform.
 
-- [Chat](https://open-assistant.io/chat)
+It is designed for people who want to experiment with generative AI without needing to immediately depend on a paid cloud API, a complex machine learning stack, or a closed system they cannot inspect.
 
-- [Project Documentation](https://projects.laion.ai/Open-Assistant/)
+Ethoculus is for:
 
-## How To Try It Out
+- Learners who want to understand how local AI works
+- Builders who want a simple starter platform
+- Writers and researchers who want document-aware AI
+- Attorneys, technologists, and citizens who want AI they can question
+- Anyone who believes AI should be more transparent, accountable, and accessible
 
-### Chatting with the AI
+Ethoculus is not about trusting AI blindly.
 
-The chat frontend is now live [here](https://open-assistant.io/chat). Log in and
-start chatting! Please try to react with a thumbs up or down for the assistant's
-responses when chatting.
+It is about making AI visible enough to challenge.
 
-### Contributing to Data Collection
+---
 
-The data collection frontend is now live [here](https://open-assistant.io/). Log
-in and start taking on tasks! We want to collect a high volume of quality data.
-By submitting, ranking, and labelling model prompts and responses you will be
-directly helping to improve the capabilities of Open Assistant.
+## Quick Start
 
-### Running the Development Setup Locally (without chat)
+### 1. Clone the repository
 
-**You do not need to run the project locally unless you are contributing to the
-development process. The website link above will take you to the public website
-where you can use the data collection app and the chat.**
-
-If you would like to run the data collection app locally for development, you
-can set up an entire stack needed to run **Open-Assistant**, including the
-website, backend, and associated dependent services, with Docker.
-
-To start the demo, run this in the root directory of the repository (check
-[this FAQ](https://projects.laion.ai/Open-Assistant/docs/faq#docker-compose-instead-of-docker-compose)
-if you have problems):
-
-```sh
-docker compose --profile ci up --build --attach-dependencies
+```bash
+git clone https://github.com/don-the-data-guy/AI-Assistant.git
+cd AI-Assistant
 ```
 
-> **Note:** when running on MacOS with an M1 chip you have to use:
-> `DB_PLATFORM=linux/x86_64 docker compose ...`
+### 2. Start Ethoculus
 
-Then, navigate to `http://localhost:3000` (It may take some time to boot up) and
-interact with the website.
+```bash
+./scripts/ethoculus/start.sh
+```
 
-> **Note:** If an issue occurs with the build, please head to the
-> [FAQ](https://projects.laion.ai/Open-Assistant/docs/faq) and check out the
-> entries about Docker.
+### 3. Pull the starter model
 
-> **Note:** When logging in via email, navigate to `http://localhost:1080` to
-> get the magic email login link.
+```bash
+./scripts/ethoculus/pull-model.sh qwen2.5:0.5b
+```
 
-> **Note:** If you would like to run this in a standardized development
-> environment (a
-> ["devcontainer"](https://code.visualstudio.com/docs/devcontainers/containers))
-> using
-> [vscode locally](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_create-a-devcontainerjson-file)
-> or in a web browser using
-> [GitHub Codespaces](https://github.com/features/codespaces), you can use the
-> provided [`.devcontainer`](.devcontainer/) folder.
+### 4. Open Ethoculus
 
-### Running the Development Setup Locally for Chat
+Open this in your browser:
 
-**You do not need to run the project locally unless you are contributing to the
-development process. The website link above will take you to the public website
-where you can use the data collection app and the chat.**
+```text
+http://localhost:3000
+```
 
-**Also note that the local setup is only for development and is not meant to be
-used as a local chatbot, unless you know what you are doing.**
+Create your local Open WebUI account, select the model, and start chatting.
 
-If you _do_ know what you are doing, then see the `inference` folder for getting
-the inference system up and running, or have a look at `--profile inference` in
-addition to `--profile ci` in the above command.
+---
 
-## The Vision
+## Stop Ethoculus
 
-We are not going to stop at replicating ChatGPT. We want to build the assistant
-of the future, able to not only write email and cover letters, but do meaningful
-work, use APIs, dynamically research information, and much more, with the
-ability to be personalized and extended by anyone. And we want to do this in a
-way that is open and accessible, which means we must not only build a great
-assistant, but also make it small and efficient enough to run on consumer
-hardware.
+```bash
+./scripts/ethoculus/stop.sh
+```
 
-## The Plan
+---
 
-##### We want to get to an initial MVP as fast as possible, by following the 3-steps outlined in the [InstructGPT paper](https://arxiv.org/abs/2203.02155)
+## Documentation
 
-1. Collect high-quality human generated Instruction-Fulfillment samples
-   (prompt + response), goal >50k. We design a crowdsourced process to collect
-   and reviewed prompts. We do not want to train on
-   flooding/toxic/spam/junk/personal information data. We will have a
-   leaderboard to motivate the community that shows progress and the most active
-   users. Swag will be given to the top-contributors.
-2. For each of the collected prompts we will sample multiple completions.
-   Completions of one prompt will then be shown randomly to users to rank them
-   from best to worst. Again this should happen crowd-sourced, e.g. we need to
-   deal with unreliable potentially malicious users. At least multiple votes by
-   independent users have to be collected to measure the overall agreement. The
-   gathered ranking-data will be used to train a reward model.
-3. Now follows the RLHF training phase based on the prompts and the reward
-   model.
+Start here:
 
-We can then take the resulting model and continue with completion sampling step
-2 for a next iteration.
+- [Ethoculus Documentation](docs/docs/ethoculus/README.md)
+- [What Is Ethoculus?](docs/docs/ethoculus/01_what_is_ethoculus.md)
+- [Install Ethoculus](docs/docs/ethoculus/02_install.md)
+- [Your First Chat](docs/docs/ethoculus/03_first_chat.md)
+- [Using RAG With Ethoculus](docs/docs/ethoculus/04_using_rag.md)
+- [Security, Privacy, and Responsible Use](docs/docs/ethoculus/05_security_and_privacy.md)
+- [Troubleshooting](docs/docs/ethoculus/06_troubleshooting.md)
+- [Contributing](docs/docs/ethoculus/07_contributing.md)
+- [Roadmap](docs/docs/ethoculus/08_roadmap.md)
+- [Sources, Licenses, and Notices](docs/docs/ethoculus/09_sources_and_notices.md)
 
-### Slide Decks
+---
 
-[Vision & Roadmap](https://docs.google.com/presentation/d/1n7IrAOVOqwdYgiYrXc8Sj0He8krn5MVZO_iLkCjTtu0/edit?usp=sharing)
+## Using RAG
 
-[Important Data Structures](https://docs.google.com/presentation/d/1iaX_nxasVWlvPiSNs0cllR9L_1neZq0RJxd6MFEalUY/edit?usp=sharing)
+RAG means Retrieval-Augmented Generation.
 
-## How You Can Help
+In plain English: the AI can answer using documents you provide, instead of relying only on what the model already knows.
 
-All open source projects begin with people like you. Open source is the belief
-that if we collaborate we can together gift our knowledge and technology to the
-world for the benefit of humanity.
+Ethoculus is intended to support document-aware workflows such as:
 
-Check out our [contributing guide](CONTRIBUTING.md) to get started.
+- Uploading PDFs or text files
+- Asking questions about your own documents
+- Building reusable knowledge bases
+- Checking whether an answer is supported by the source material
+- Separating model output from actual evidence
+
+For the first version, Ethoculus uses Open WebUI’s document and knowledge features as the practical RAG layer.
+
+Future versions may add a more opinionated DonTheDataGuy-style RAG workflow focused on citations, evidence checks, source quality, and auditability.
+
+---
+
+## Core Principles
+
+Ethoculus is built around five basic principles.
+
+### 1. Local First
+
+The default version should run locally when possible.
+
+That does not make every use private or safe by itself, but it gives users more control over the system they are running.
+
+### 2. Easy to Install
+
+A useful AI project should not require a PhD in infrastructure.
+
+The starter experience should be simple:
+
+```text
+clone → start → pull model → chat
+```
+
+### 3. Evidence Over Vibes
+
+AI should not be treated as an oracle.
+
+Ethoculus should help users ask:
+
+- What is the source?
+- Is the answer grounded?
+- What is missing?
+- What assumptions are being made?
+- Who could be harmed if this is wrong?
+
+### 4. Human Judgment Stays Central
+
+Ethoculus is a tool.
+
+It does not replace professional judgment, legal judgment, medical judgment, moral judgment, or democratic accountability.
+
+### 5. Protect the People Most Likely to Be Harmed
+
+AI systems often fail hardest against people with the least power to challenge them.
+
+Ethoculus should be developed with that risk in mind from the beginning.
+
+---
+
+## Roadmap
+
+Planned direction:
+
+- Simple Docker-based local install
+- Small starter model support
+- Larger optional model support
+- Better onboarding documentation
+- RAG/document workflows
+- Source-checking templates
+- Ethical review prompts
+- Example legal, policy, and research workflows
+- DonTheDataGuy website integration
+- Public demo documentation
+- Contributor guide
+
+---
+
+## Project Status
+
+Ethoculus is in early starter-platform form.
+
+The immediate goal is to provide a simple, downloadable, working local generative AI platform.
+
+The next goal is to make it easier to use with documents, citations, and transparent workflows.
+
+---
+
+## Attribution
+
+This repository began from the open-source LAION Open Assistant project.
+
+Open Assistant was an important open-source effort to make chat-based large language model technology more accessible. The upstream Open Assistant project has been completed.
+
+Ethoculus is a new project direction focused on local-first installation, document-aware AI, source verification, and responsible public use.
+
+This project should not be represented as the original LAION Open Assistant project.
+
+Original upstream project:
+
+- [LAION Open Assistant](https://github.com/LAION-AI/Open-Assistant)
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+Helpful contributions include:
+
+- Improving installation instructions
+- Testing on Mac, Windows, and Linux
+- Fixing broken setup steps
+- Improving documentation
+- Adding RAG examples
+- Creating ethical review workflows
+- Making the project easier for nontechnical users
+
+Start here:
+
+- [Contributing](docs/docs/ethoculus/07_contributing.md)
+
+---
+
+## License
+
+This repository retains the applicable open-source license terms from the original project where required.
+
+See:
+
+- [LICENSE](LICENSE)
+- [Sources, Licenses, and Notices](docs/docs/ethoculus/09_sources_and_notices.md)
+
+---
+
+## DonTheDataGuy Rule
+
+Check the sources.
+
+Validate the outputs.
+
+Question the machine.
+
+Protect the people most likely to be harmed by automation.
