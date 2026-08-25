@@ -257,7 +257,7 @@ Helpful contributions include:
 
 Start here:
 
-- [Contributing](docs/docs/ethoculus/07_contributing.md)
+- [Contributing](CONTRIBUTING.md)
 
 ---
 
