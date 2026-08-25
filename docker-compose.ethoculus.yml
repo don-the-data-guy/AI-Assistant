@@ -1,0 +1,66 @@
+name: ethoculus
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ethoculus-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ethoculus-ollama-data:/root/.ollama
+    restart: unless-stopped
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: ethoculus-webui
+    depends_on:
+      - ollama
+    ports:
+      - "3000:8080"
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+      WEBUI_SECRET_KEY: ethoculus-change-this-secret-key
+      WEBUI_NAME: Ethoculus
+      WEBUI_AUTH: "true"
+      ENABLE_RAG_HYBRID_SEARCH: "true"
+      ENABLE_RAG_HYBRID_SEARCH_ENRICHED_TEXTS: "true"
+      RAG_TEMPLATE: |
+        ### Task:
+        Respond to the user using the provided context. Your job is not merely to answer. Your job is to help the user understand what is supported, what is uncertain, and what requires human verification.
+
+        ### Required Output:
+        1. Answer
+           - Give the clearest answer supported by the context.
+
+        2. Source Support
+           - Identify which parts of the answer are supported by the provided context.
+           - Use inline citations in the format [id] only when the source tag includes an explicit id attribute.
+
+        3. Unsupported or Unclear Claims
+           - Identify any part of the user's request that is not clearly answered by the context.
+           - Do not invent citations or pretend unsupported claims are proven.
+
+        4. Assumptions
+           - List any assumptions you are making.
+
+        5. Human Verification Needed
+           - Explain what a human should verify before relying on the answer.
+
+        6. Harm Check
+           - Briefly explain who could be harmed if this answer is wrong, incomplete, biased, or used without context.
+
+        ### Rules:
+        - If the context does not answer the question, say so clearly.
+        - Do not provide legal, medical, financial, or safety-critical advice without noting that expert human review is required.
+        - Evidence over vibes.
+
+        <context>
+        {{CONTEXT}}
+        </context>
+    volumes:
+      - ethoculus-open-webui-data:/app/backend/data
+    restart: unless-stopped
+
+volumes:
+  ethoculus-ollama-data:
+  ethoculus-open-webui-data:

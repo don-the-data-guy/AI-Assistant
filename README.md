@@ -40,6 +40,8 @@ The long-term goal is to evolve Ethoculus into a transparent, document-aware AI 
 
 > Check my citations, validate my sources, and come to your own conclusion.
 
+> Ethoculus should answer with evidence, identify uncertainty, and remind users when human verification is needed.
+
 ---
 
 # Table of Contents
@@ -279,3 +281,10 @@ Validate the outputs.
 Question the machine.
 
 Protect the people most likely to be harmed by automation.
+
+
+## Ethical Operation
+
+- [Ethical Operation](docs/docs/ethoculus/10_ethical_operation.md)
+- [Privacy and Data Handling](docs/docs/ethoculus/11_privacy_and_data.md)
+- [Ethoculus Evidence Mode Prompt](prompts/ethoculus_evidence_mode.md)
