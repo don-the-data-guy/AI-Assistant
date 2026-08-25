@@ -268,7 +268,6 @@ This repository retains the applicable open-source license terms from the origin
 See:
 
 - [LICENSE](LICENSE)
-- [License](LICENSE)
 ---
 
 ## DonTheDataGuy Rule
