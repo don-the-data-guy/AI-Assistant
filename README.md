@@ -269,7 +269,6 @@ See:
 
 - [LICENSE](LICENSE)
 - [Sources, Licenses, and Notices](docs/docs/ethoculus/09_sources_and_notices.md)
-
 ---
 
 ## DonTheDataGuy Rule
