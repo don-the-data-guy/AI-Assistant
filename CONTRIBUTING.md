@@ -1,153 +1,269 @@
-<a href="https://github-com.translate.goog/LAION-AI/Open-Assistant/blob/main/CONTRIBUTING.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">![Translate](https://img.shields.io/badge/Translate-blue)</a>
+# Contributing to Ethoculus
 
-# I’m in! Now what?
+Thank you for your interest in contributing to Ethoculus.
 
-[Join the OpenAssistant Contributors Discord Server!](https://ykilcher.com/open-assistant-discord),
-this is for work coordination.
+Ethoculus is an early-stage, local-first generative AI starter platform. The goal is simple:
 
-[Join the LAION Discord Server!](https://discord.com/invite/mVcgxMPD7e), it has
-a dedicated channel and is more public.
+> Make AI easier to download, run, inspect, question, and improve.
 
-[and / or the YK Discord Server](https://ykilcher.com/discord), also has a
-dedicated, but not as active, channel.
+This project is not trying to be the biggest AI platform. It is trying to be a practical, transparent, local-first platform that ordinary users can install and understand.
 
-[Visit the Notion](https://ykilcher.com/open-assistant)
+---
 
-### Taking on Tasks
+## Current Project Status
 
-We have a growing task list of
-[issues](https://github.com/LAION-AI/Open-Assistant/issues). Find an issue that
-appeals to you and make a comment that you'd like to work on it. Include in your
-comment a brief description of how you'll solve the problem and if there are any
-open questions you want to discuss. Once a project coordinator has assigned the
-issue to you, start working on it.
+Ethoculus is currently focused on:
 
-If the issue is currently unclear but you are interested, please post in Discord
-and someone can help clarify the issue in more detail.
+- Easy local installation
+- Clear documentation
+- Docker-based setup
+- Ollama model support
+- Open WebUI integration
+- Basic RAG/document workflows
+- Ethical AI usage patterns
+- Source-checking and transparency
 
-**Always Welcome:** Documentation markdowns in `docs/`, docstrings, diagrams of
-the system architecture, and other documentation.
+Because the project is still early, the most useful contributions are small, practical, and easy to review.
 
-### Submitting Work
+---
 
-We're all working on different parts of Open Assistant together. To make
-contributions smoothly we recommend the following:
+## Ways You Can Help
 
-1.  [Fork this project repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-    and clone it to your local machine. (Read more
-    [About Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks))
-1.  Before working on any changes, try to
-    [sync the forked repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
-    to keep it up-to-date with the upstream repository.
-1.  On a
-    [new branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
-    in your fork (aka a "feature branch" and not `main`) work on a small focused
-    change that only touches on a few files.
-1.  Run `pre-commit` and make sure all files have formatting fixed. This
-    simplifies life for reviewers.
-1.  Package up a small bit of work that solves part of the problem
-    [into a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
-    and
-    [send it out for review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review).
-    [Here](https://github.com/LAION-AI/Open-Assistant/pull/658) is an example PR
-    for this project to illustrate this flow.
-1.  If you're lucky, we can merge your change into `main` without any problems.
-    If there are changes to files you're working on, resolve them by:
-    1.  First try to rebase as suggested
-        [in these instructions](https://timwise.co.uk/2019/10/14/merge-vs-rebase/#should-you-rebase).
-    1.  If rebasing feels too painful, merge as suggested
-        [in these instructions](https://timwise.co.uk/2019/10/14/merge-vs-rebase/#should-you-merge).
-1.  Once you've resolved conflicts (if any), finish the review and
-    [squash and merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
-    your PR (when squashing try to clean up or update the individual commit
-    messages to be one sensible single one).
-1.  Merge in your change and move on to a new issue or the second step of your
-    current issue.
+Helpful contributions include:
 
-Additionally, if someone is working on an issue that interests you, ask if they
-need help on it or would like suggestions on how to approach the issue. If so,
-share wildly. If they seem to have a good handle on it, let them work on their
-solution until a challenge comes up.
+- Testing installation on Mac, Windows, and Linux
+- Improving setup instructions
+- Fixing broken links
+- Improving Markdown documentation
+- Adding screenshots or diagrams
+- Reporting confusing steps
+- Adding troubleshooting notes
+- Testing small local models
+- Improving RAG/document workflows
+- Suggesting ethical review prompts
+- Making the project easier for nontechnical users
 
-#### Tips
+Documentation improvements are especially welcome.
 
-- At any point you can compare your feature branch to the upstream/main of
-  `LAION-AI/Open-Assistant` by using a URL like this:
-  https://github.com/LAION-AI/Open-Assistant/compare/main...andrewm4894:Open-Assistant:my-example-feature-branch.
-  Obviously just replace `andrewm4894` with your own GitHub user name and
-  `my-example-feature-branch` with whatever you called the feature branch you
-  are working on, so something like
-  `https://github.com/LAION-AI/Open-Assistant/compare/main...<your_github_username>:Open-Assistant:<your_branch_name>`.
-  This will show the changes that would appear in a PR, so you can check this to
-  make sure only the files you have changed or added will be part of the PR.
-- Try not to work on the `main` branch in your fork - ideally you can keep this
-  as just an updated copy of `main` from `LAION-AI/Open-Assistant`.
-- If your feature branch gets messed up, just update the `main` branch in your
-  fork and create a fresh new clean "feature branch" where you can add your
-  changes one by one in separate commits or all as a single commit.
+---
 
-### When does a review finish
+## Before You Start
 
-A review finishes when all blocking comments are addressed and at least one
-owning reviewer has approved the PR. Be sure to acknowledge any non-blocking
-comments either by making the requested change, explaining why it's not being
-addressed now, or filing an issue to handle it later.
+Please check the repository issues first:
 
-## Developer Setup
+[Ethoculus Issues](https://github.com/don-the-data-guy/AI-Assistant/issues)
 
-Work is organized in the
-[project board](https://github.com/orgs/LAION-AI/projects/3).
+If there is already an issue related to your idea, add a comment there.
 
-**Anything that is in the `Todo` column and not assigned, is up for grabs.
-Meaning we'd be happy for anyone to do these tasks.**
+If there is no existing issue, you may open a new one describing:
 
-If you want to work on something, assign yourself to it or write a comment that
-you want to work on it and what you plan to do.
+1. What problem you found
+2. Why it matters
+3. What change you suggest
+4. Whether you are willing to work on it
 
-- There's an [introduction for developers](docs/docs/guides/developers.md) that
-  gives an overview of the different tools and technologies used in the project.
-- To get started with development, if you want to work on the backend, have a
-  look at `backend/README.md`.
-- If you want to work on any frontend, have a look at `website/README.md`.
+---
 
-There is also a minimal implementation of a frontend in the `text-frontend`
-folder.
+## Submitting a Change
 
-We are using Python 3.10 for the backend.
+The preferred contribution process is:
 
-Check out the
-[High-Level Protocol Architecture](https://www.notion.so/High-Level-Protocol-Architecture-6f1fd3551da74213b560ead369f132dc)
+1. Fork the repository
+2. Create a new branch
+3. Make a small, focused change
+4. Test your change
+5. Submit a pull request
 
-### Website
+Example:
 
-The website is built using Next.js and is in the `website` folder.
+```bash
+git checkout -b docs/fix-install-instructions
+```
 
-### Pre-commit
+After making your changes:
 
-We are using `pre-commit` to enforce code style and formatting.
+```bash
+git add .
+git commit -m "Improve Ethoculus install instructions"
+git push origin docs/fix-install-instructions
+```
 
-Install `pre-commit` from [its website](https://pre-commit.com) and run
-`pre-commit install` to install the pre-commit hooks.
+Then open a pull request on GitHub.
 
-In case you haven't done this, have already committed, and CI is failing, you
-can run `pre-commit run --all-files` to run the pre-commit hooks on all files.
+---
 
-### Deployment
+## Pull Request Guidelines
 
-Upon making a release on GitHub, all docker images are automatically built and
-pushed to ghcr.io. The docker images are tagged with the release version and the
-`latest` tag. Further, the ansible playbook in `ansible/dev.yaml` is run to
-automatically deploy the built release to the dev machine.
+Please keep pull requests focused.
 
-### Contribute a Dataset
+Good pull requests usually:
 
-See
-[here](https://github.com/LAION-AI/Open-Assistant/blob/main/data/datasets/README.md)
+- Fix one clear issue
+- Touch only the files needed
+- Include a plain-English explanation
+- Avoid unnecessary formatting changes
+- Do not mix documentation, code, and branding changes unless necessary
 
-## Translations
+A good pull request title looks like:
 
-[![translation badge](https://inlang.com/badge?url=github.com/LAION-AI/Open-Assistant)](https://inlang.com/editor/github.com/LAION-AI/Open-Assistant?ref=badge)
+```text
+Improve Mac Docker troubleshooting steps
+```
 
-To add translations, you can manually edit the JSON translation files in
-`website/public/locales`, use the [inlang](https://inlang.com/) online editor,
-or run `npm run inlang:lint` inside `website` to find missing translations.
+or:
+
+```text
+Add beginner RAG example
+```
+
+---
+
+## Documentation Style
+
+Ethoculus documentation should be:
+
+- Clear
+- Practical
+- Honest
+- Beginner-friendly
+- Skeptical of AI overclaiming
+- Written in plain English
+
+Avoid hype.
+
+Prefer:
+
+```text
+This helps users test a local model.
+```
+
+Instead of:
+
+```text
+This revolutionary AI system will transform everything.
+```
+
+The DonTheDataGuy rule applies:
+
+> Check the sources. Validate the outputs. Question the machine. Protect the people most likely to be harmed by automation.
+
+---
+
+## Ethical AI Contributions
+
+Ethoculus welcomes contributions that make AI more transparent and accountable.
+
+Examples include:
+
+- Source-checking workflows
+- RAG verification prompts
+- Bias and failure-mode examples
+- Model limitation warnings
+- Privacy and security guidance
+- Human review checklists
+- Legal, policy, and research use-case warnings
+
+Ethoculus should help users ask:
+
+- What is the source?
+- What evidence supports the answer?
+- What is missing?
+- What assumptions are being made?
+- Who could be harmed if this output is wrong?
+
+---
+
+## Development Setup
+
+For the current Ethoculus starter setup, see:
+
+- [README](README.md)
+
+Basic local start:
+
+```bash
+./scripts/ethoculus/start.sh
+```
+
+Pull the starter model:
+
+```bash
+./scripts/ethoculus/pull-model.sh qwen2.5:0.5b
+```
+
+Stop Ethoculus:
+
+```bash
+./scripts/ethoculus/stop.sh
+```
+
+---
+
+## Reporting Bugs
+
+When reporting a bug, please include:
+
+- Your operating system
+- Whether you are using Docker Desktop
+- The command you ran
+- The full error message
+- What you expected to happen
+- What actually happened
+
+Helpful example:
+
+```text
+OS: macOS Apple Silicon
+Command: ./scripts/ethoculus/start.sh
+Error: Cannot connect to Docker daemon
+Expected: Docker containers start
+Actual: Docker daemon was not reachable
+```
+
+---
+
+## Good First Contributions
+
+Good first contributions include:
+
+- Fixing a typo
+- Clarifying an install step
+- Adding a missing command
+- Improving a broken link
+- Adding a troubleshooting example
+- Testing the README on a fresh machine
+- Adding screenshots to the documentation
+
+---
+
+## Attribution
+
+This repository began from the open-source LAION Open Assistant project.
+
+Ethoculus is a new project direction focused on local-first installation, document-aware AI, source verification, and responsible public use.
+
+Please do not represent Ethoculus as the original LAION Open Assistant project.
+
+Original upstream project:
+
+- [LAION Open Assistant](https://github.com/LAION-AI/Open-Assistant)
+
+---
+
+## License
+
+This repository retains applicable open-source license obligations from the original project where required.
+
+Please see:
+
+- [LICENSE](LICENSE)
+
+---
+
+## Final Note
+
+Ethoculus is early.
+
+That means small improvements matter.
+
+If you make the installation clearer, fix a confusing step, add a better example, or help one more person run local AI successfully, that is a meaningful contribution.
