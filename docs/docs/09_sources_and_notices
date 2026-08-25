@@ -1,0 +1,107 @@
+# Sources, Licenses, and Notices
+
+Ethoculus is an early-stage, local-first generative AI starter platform focused on practical installation, document-aware workflows, source checking, and responsible public use.
+
+This page explains the project’s attribution, licensing, and third-party component notices.
+
+---
+
+## Project Origin
+
+This repository began from the open-source LAION Open Assistant project.
+
+Open Assistant was an important open-source effort to make chat-based large language model technology more accessible. The upstream Open Assistant project has been completed.
+
+Ethoculus is a new project direction. It should not be represented as the original LAION Open Assistant project.
+
+Original upstream project:
+
+- [LAION Open Assistant](https://github.com/LAION-AI/Open-Assistant)
+
+---
+
+## Ethoculus Project Direction
+
+Ethoculus focuses on:
+
+- Local-first installation
+- Simple model setup
+- Docker-based deployment
+- Ollama model support
+- Open WebUI integration
+- Document-aware RAG workflows
+- Source verification
+- Ethical AI use
+- Human review and accountability
+
+The Ethoculus rule:
+
+> Check the sources. Validate the outputs. Question the machine. Protect the people most likely to be harmed by automation.
+
+---
+
+## Repository License
+
+This repository retains applicable open-source license obligations from the original project where required.
+
+See:
+
+- [LICENSE](../../../LICENSE)
+
+At the time this notice was written, the repository includes an Apache License 2.0 file.
+
+---
+
+## Third-Party Components
+
+Ethoculus may use or reference third-party open-source tools, including:
+
+- Ollama
+- Open WebUI
+- Docker
+- Docker Compose
+- Open-source local language models
+
+Each third-party project is governed by its own license, terms, documentation, and model-use restrictions.
+
+Before redistributing, modifying, or using any model or dependency commercially, check the license for that specific component.
+
+---
+
+## Model Licenses
+
+Ethoculus does not claim ownership over third-party model weights.
+
+Models downloaded through Ollama or other model providers remain governed by their own licenses.
+
+Users are responsible for checking the license and acceptable-use terms for any model they download or run.
+
+---
+
+## No Legal, Medical, or Professional Advice
+
+Ethoculus is a software project and educational tool.
+
+Outputs from AI models may be incomplete, outdated, biased, fabricated, or wrong.
+
+Do not rely on Ethoculus or any AI model as a substitute for professional judgment, legal advice, medical advice, financial advice, or safety-critical review.
+
+---
+
+## Attribution Notes
+
+Where Ethoculus uses, adapts, or references open-source work, the project should preserve required license notices and provide reasonable attribution.
+
+If you believe an attribution, license, or notice is missing, please open an issue or submit a pull request.
+
+---
+
+## Responsible Use
+
+Ethoculus is intended to help users build, test, inspect, and question local AI systems.
+
+Please use it in ways that respect privacy, security, intellectual property, and human dignity.
+
+The goal is not just to make AI easier to run.
+
+The goal is to make AI easier to challenge.
