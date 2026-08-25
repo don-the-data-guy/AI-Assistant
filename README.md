@@ -121,17 +121,14 @@ Create your local Open WebUI account, select the model, and start chatting.
 
 Start here:
 
-- [Ethoculus Documentation](docs/docs/ethoculus/README.md)
-- [What Is Ethoculus?](docs/docs/ethoculus/01_what_is_ethoculus.md)
-- [Install Ethoculus](docs/docs/ethoculus/02_install.md)
-- [Your First Chat](docs/docs/ethoculus/03_first_chat.md)
-- [Using RAG With Ethoculus](docs/docs/ethoculus/04_using_rag.md)
-- [Security, Privacy, and Responsible Use](docs/docs/ethoculus/05_security_and_privacy.md)
-- [Troubleshooting](docs/docs/ethoculus/06_troubleshooting.md)
-- [Contributing](docs/docs/ethoculus/07_contributing.md)
-- [Roadmap](docs/docs/ethoculus/08_roadmap.md)
-- [Sources, Licenses, and Notices](docs/docs/ethoculus/09_sources_and_notices.md)
-
+- [Quick Start](#quick-start)
+- [Using RAG](#using-rag)
+- [Core Principles](#core-principles)
+- [Roadmap](#roadmap)
+- [Project Status](#project-status)
+- [Attribution](#attribution)
+- [Contributing](#contributing)
+- [License](#license)
 ---
 
 ## Using RAG
