@@ -1,10 +1,14 @@
-<h1 align="center">
-    <span>Open-Assistant</span>
+## Documentation
+
+- [Ethoculus Documentation](docs/docs/ethoculus/README.md)
+- [Install Ethoculus](docs/docs/ethoculus/02_install.md)
+- [Using RAG With Ethoculus](docs/docs/ethoculus/04_using_rag.md)
+- [Troubleshooting](docs/docs/ethoculus/06_troubleshooting.md)    <span>Open-Assistant</span>
   <img width="auto" height="50px" src="https://github.com/LAION-AI/Open-Assistant/blob/main/assets/logo_crop.png"/>
 </h1>
 
 <blockquote>
-<p>:memo: <strong>NOTE</strong>: OpenAssistant is completed, and the project is now finished. Thank you to everyone who contributed! Check out our <a href="https://projects.laion.ai/Open-Assistant/blog/2023/10/25/open-assistant-is-completed">blog post</a> for more information.</p>
+<p>:memo: <strong>NOTE</strong>: OpenAssistant is completed, and the project is now finished. Thank you to everyone who contributed! Check out our <a href="docs/docs/ethoculus/README.mdblog/2023/10/25/open-assistant-is-completed">blog post</a> for more information.</p>
 </blockquote>
 
 <div align="center">
@@ -53,7 +57,7 @@ improving language itself.
 
 - [Chat](https://open-assistant.io/chat)
 
-- [Project Documentation](https://projects.laion.ai/Open-Assistant/)
+- [Project Documentation](docs/docs/ethoculus/README.md)
 
 ## How To Try It Out
 
@@ -81,7 +85,7 @@ can set up an entire stack needed to run **Open-Assistant**, including the
 website, backend, and associated dependent services, with Docker.
 
 To start the demo, run this in the root directory of the repository (check
-[this FAQ](https://projects.laion.ai/Open-Assistant/docs/faq#docker-compose-instead-of-docker-compose)
+[this FAQ](docs/docs/ethoculus/06_troubleshooting.md#docker-compose-instead-of-docker-compose)
 if you have problems):
 
 ```sh
@@ -95,7 +99,7 @@ Then, navigate to `http://localhost:3000` (It may take some time to boot up) and
 interact with the website.
 
 > **Note:** If an issue occurs with the build, please head to the
-> [FAQ](https://projects.laion.ai/Open-Assistant/docs/faq) and check out the
+> [FAQ](docs/docs/ethoculus/06_troubleshooting.md) and check out the
 > entries about Docker.
 
 > **Note:** When logging in via email, navigate to `http://localhost:1080` to
