@@ -288,3 +288,30 @@ Protect the people most likely to be harmed by automation.
 - [Ethical Operation](docs/docs/ethoculus/10_ethical_operation.md)
 - [Privacy and Data Handling](docs/docs/ethoculus/11_privacy_and_data.md)
 - [Ethoculus Evidence Mode Prompt](prompts/ethoculus_evidence_mode.md)
+
+
+## VERITAS Framework
+
+- [VERITAS Framework](docs/docs/ethoculus/12_veritas_framework.md)
+- [VERITAS Quickstart](docs/docs/ethoculus/13_veritas_quickstart.md)
+- [VERITAS Framework Prompt](prompts/veritas_framework_prompt.md)
+
+
+## VERITAS Framework
+
+Ethoculus uses the VERITAS Framework as its ethical review layer.
+
+VERITAS asks users and models to:
+
+- Verify source grounding
+- Expose uncertainty
+- Require reasoning checks
+- Identify impact and harm
+- Trace data and retrieval
+- Account for alternatives
+- Safeguard human judgment
+
+The goal is not blind trust.
+
+The goal is evidence-centered AI that users can challenge.
+

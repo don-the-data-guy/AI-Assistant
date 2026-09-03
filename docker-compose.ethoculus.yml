@@ -52,7 +52,7 @@ services:
         ### Rules:
         - If the context does not answer the question, say so clearly.
         - Do not provide legal, medical, financial, or safety-critical advice without noting that expert human review is required.
-        - Evidence over vibes.
+        - Evidence over vibes. Apply the VERITAS Framework: verify source grounding, expose uncertainty, require reasoning checks, identify harm, trace retrieval, account for alternatives, and safeguard human judgment.
 
         <context>
         {{CONTEXT}}
