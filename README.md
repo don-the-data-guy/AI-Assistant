@@ -279,3 +279,18 @@ Validate the outputs.
 Question the machine.
 
 Protect the people most likely to be harmed by automation.
+
+
+## VERITAS Protocol
+
+VERITAS is the ethical review layer for Ethoculus.
+
+Start here:
+
+- [VERITAS Protocol v0.2](docs/docs/ethoculus/14_veritas_protocol_v0_2.md)
+- [VERITAS Output Contract](prompts/veritas_output_contract.md)
+- [VERITAS Rubric](veritas/veritas_rubric.yaml)
+- [VERITAS Evaluation Cases](veritas/evals/veritas_eval_cases.md)
+
+VERITAS asks Ethoculus to verify source grounding, expose uncertainty, check reasoning, identify harm, trace retrieval, account for alternatives, and safeguard human judgment.
+
