@@ -1,0 +1,27 @@
+# Ethoculus local stack: Ollama (model runtime) + Open WebUI (chat interface)
+# Ports are bound to 127.0.0.1 so they are reachable only from this computer.
+# Ollama is deliberately NOT published to the host: the only way in is through
+# the web UI (and, later, the kill-switch gateway).
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-data:/root/.ollama
+    restart: unless-stopped
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - "127.0.0.1:3000:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    volumes:
+      - open-webui-data:/app/backend/data
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+  open-webui-data:
