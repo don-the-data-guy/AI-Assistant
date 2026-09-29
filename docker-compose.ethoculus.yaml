@@ -1,3 +1,5 @@
+name: ethoculus
+
 # Ethoculus local stack: Ollama (model runtime) + Open WebUI (chat interface)
 # Ports are bound to 127.0.0.1 so they are reachable only from this computer.
 # Ollama is deliberately NOT published to the host: the only way in is through
